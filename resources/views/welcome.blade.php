@@ -213,6 +213,28 @@
             line-height: 1;
         }
 
+        /* Feedback messages */
+        .message {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+            line-height: 1;
+            padding: 10px 18px;
+            border-radius: 100px;
+        }
+
+        .message--success {
+            color: #F3EDE2;
+            background: rgba(200, 32, 43, 0.15);
+            border: 1px solid rgba(200, 32, 43, 0.35);
+        }
+
+        .message--already {
+            color: rgba(243, 237, 226, 0.5);
+            background: rgba(243, 237, 226, 0.05);
+            border: 1px solid rgba(243, 237, 226, 0.12);
+        }
+
         /* Responsive */
         @media (max-width: 600px) {
             .container {
@@ -256,16 +278,27 @@
                 <em>3 minutes.</em>
             </h1>
 
-            <form class="form" action="#" method="POST">
-                @csrf
-                <input type="email" name="email" placeholder="ton@email.com" required>
-                <button type="submit">&#8594;</button>
-            </form>
+            @if(session('success'))
+                <p class="message message--success">
+                    Bienvenu·e — tu es le n°<strong>{{ session('success') }}</strong>&nbsp;🎉
+                </p>
+            @elseif(session('already'))
+                <p class="message message--already">Tu es déjà dans la liste.</p>
+            @else
+                <form class="form" action="{{ route('subscribe') }}" method="POST">
+                    @csrf
+                    <input type="email" name="email" placeholder="ton@email.com" required>
+                    <button type="submit">&#8594;</button>
+                </form>
+            @endif
 
             <p class="tagline">Djor, dans la sience &mdash; tu attends quoi&nbsp;?</p>
 
             <p class="counter">
-                Déjà <strong>847</strong> personnes savent. Tu seras le n°<strong>848</strong>.
+                Déjà <strong>{{ \App\Models\Subscriber::count() ?: 847 }}</strong> personnes savent.
+                @if(!session('success'))
+                    Tu seras le n°<strong>{{ \App\Models\Subscriber::count() + 1 ?: 848 }}</strong>.
+                @endif
             </p>
         </main>
 
