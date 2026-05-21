@@ -138,14 +138,14 @@
             Quand shoptongba ouvrira, tu seras parmi les tout premiers à pouvoir louer une voiture en 3 minutes — avant tout le monde.
         </p>
 
+        <p class="body-text">
+            On reviendra vers toi très bientôt. D'ici là, reste dans la sience.
+        </p>
+
         <div class="number-block">
             <div class="number-label">Ton numéro de liste</div>
             <div class="number-value">n°{{ $subscriber->number }}</div>
         </div>
-
-        <p class="body-text">
-            On reviendra vers toi très bientôt. D'ici là, reste dans la sience.
-        </p>
 
         <div class="footer">
             <p>Abidjan &mdash; 2026 &mdash; Accès limité aux 1000 premiers</p>
