@@ -10,9 +10,9 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #0D0A09;
+            background-color: #F3EDE2;
             font-family: 'Manrope', Arial, sans-serif;
-            color: #F3EDE2;
+            color: black;
         }
 
         .wrapper {
@@ -25,7 +25,7 @@
             font-family: 'Bricolage Grotesque', Arial, sans-serif;
             font-weight: 500;
             font-size: 18px;
-            color: #F3EDE2;
+            color: black;
             letter-spacing: -0.4px;
             margin-bottom: 48px;
         }
@@ -47,7 +47,7 @@
             font-size: 36px;
             line-height: 1.1;
             letter-spacing: -1px;
-            color: #F3EDE2;
+            color: black;
             margin: 0 0 24px;
         }
 
