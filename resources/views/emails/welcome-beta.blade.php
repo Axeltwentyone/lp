@@ -68,14 +68,14 @@
             font-family: 'Manrope', Arial, sans-serif;
             font-size: 15px;
             font-weight: 400;
-            color: rgba(243, 237, 226, 0.75);
+            color: rgba(13, 10, 9, 0.6);
             line-height: 1.65;
             margin: 0 0 16px;
         }
 
         .number-block {
-            background: rgba(200, 32, 43, 0.08);
-            border: 1px solid rgba(200, 32, 43, 0.25);
+            background: rgba(200, 32, 43, 0.06);
+            border: 1px solid rgba(200, 32, 43, 0.2);
             border-radius: 12px;
             padding: 20px 24px;
             margin: 28px 0;
@@ -86,7 +86,7 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: 11px;
             font-weight: 400;
-            color: rgba(243, 237, 226, 0.4);
+            color: rgba(13, 10, 9, 0.4);
             letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 8px;
@@ -103,14 +103,14 @@
         .footer {
             margin-top: 48px;
             padding-top: 24px;
-            border-top: 1px solid rgba(243, 237, 226, 0.08);
+            border-top: 1px solid rgba(13, 10, 9, 0.1);
         }
 
         .footer p {
             font-family: 'JetBrains Mono', monospace;
             font-size: 11px;
             font-weight: 400;
-            color: rgba(243, 237, 226, 0.25);
+            color: rgba(13, 10, 9, 0.35);
             letter-spacing: 2px;
             text-transform: uppercase;
             margin: 0;

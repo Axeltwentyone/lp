@@ -282,7 +282,7 @@
 
             @if(session('success'))
                 <p class="message message--success">
-                    Bienvenu·e — tu es le n°<strong>{{ session('success') }}</strong>&nbsp;🎉
+                    Merci — check tes mails.
                 </p>
             @elseif(session('already'))
                 <p class="message message--already">Tu es déjà dans la liste.</p>
